@@ -12,8 +12,8 @@ const About = () => {
 
   
   return (
-    <section ref={ref}>
-    <div className='w-full p-4 lg:pb-[50px] h-full md:w-full md:h-full md:pt-24 flex flex-wrap bg-white text-black'>
+    <section ref={ref} id='about'>
+    <div className='w-full p-4 lg:pb-[50px] h-full md:w-full md:h-full md:pt-24 flex flex-wrap text-white'>
       <div className='w-full md:w-1/2 flex lg:pt-[45px] items-center'>
         <img
           src={img6}
@@ -23,14 +23,14 @@ const About = () => {
       </div>
       <div className='w-full md:w-1/2 pt-24 p-4'>
         <p>About Us</p>
-        <p className='font-bold text-[45px]'>More than 100+ guitars<br />in our store</p>
+        <p className='font-bold text-orange-400 text-[45px]'>More than 100+ guitars<br />in our store</p>
         <p>
           In our guitar store, you can typically find a wide variety of guitars,
           including acoustic guitars, electric guitars, bass guitars, and classical
           guitars. We may also offer different brands, models, and styles to suit
           various musical genres and player preferences.
         </p>
-        <div  className='flex gap-x-6 lg:gp-x-10 mb-12'>
+        <div  className='flex gap-x-6 text-orange-400 lg:gp-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-bold font-tertiary text-gradient mb-2'>
                 {inView?  <CountUp start={0} end={15} duration={3} />:null}

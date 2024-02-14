@@ -16,9 +16,9 @@ function Categories() {
       };
     
     return (
-        <div className='lg:pt-[60px]'>
+        <div className='lg:pt-[60px]' id='categories'>
         <p
-          className='w-full text-[40px] p-2 text-center justify-center text-white font-bold  object-cover'
+          className='w-full text-[40px] p-2 text-center justify-center text-orange-400 font-bold  object-cover'
          
         >  Categories </p>
         <p className='w-full  text-center p-4 justify-center text-white font-bold object-cover'>Visit our guitar store and find the guitar you've been looking for. Come and make your purchase today!</p>
