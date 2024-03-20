@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/guitarr/static/css/main.39ec47a8.css",
+    "main.js": "/guitarr/static/js/main.7324d6e7.js",
+    "static/media/img14.png": "/guitarr/static/media/img14.e80fddf93bb3b5a32ba6.png",
+    "static/media/img2 (2).png": "/guitarr/static/media/img2 (2).adbc48909b06f51ffc4b.png",
+    "static/media/image.png": "/guitarr/static/media/image.fbd18d237f7a22fd5912.png",
+    "static/media/img 3.jpg": "/guitarr/static/media/img 3.24d7206bb1a9695e2a96.jpg",
+    "static/media/img 4.jpg": "/guitarr/static/media/img 4.bf6079bd0218200ba68d.jpg",
+    "index.html": "/guitarr/index.html",
+    "main.39ec47a8.css.map": "/guitarr/static/css/main.39ec47a8.css.map",
+    "main.7324d6e7.js.map": "/guitarr/static/js/main.7324d6e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39ec47a8.css",
+    "static/js/main.7324d6e7.js"
+  ]
+}
