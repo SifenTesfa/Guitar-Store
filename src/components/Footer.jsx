@@ -2,7 +2,7 @@ import React from 'react';
 import img14 from '../image/img14.png';
 import { FaTelegram } from 'react-icons/fa';
 import { AiOutlineFacebook, AiOutlineYoutube, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
-
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -27,10 +27,22 @@ const Footer = () => {
           <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
             <p className='text-orange-400 text-[20px] font-bold'>Other Pages</p>
             <ul className="list-none">
-              <li className="text-gray-300 hover:text-white text-sm mb-2 block" >Home</li>
-              <li className="text-gray-300 hover:text-white text-sm mb-2 block" >About</li>
-              <li className="text-gray-300 hover:text-white text-sm mb-2 block" >Categories</li>
-              <li className="text-gray-300 hover:text-white text-sm mb-2 block" >Contact</li>
+              <li className="text-gray-300 hover:text-orange-400 text-sm mb-2 block" > <Link to='home' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Home </Link></li>
+              <li className="text-gray-300 hover:text-orange-400 text-sm mb-2 block" ><Link to='about' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>About </Link></li>
+              <li className="text-gray-300 hover:text-orange-400 text-sm mb-2 block" ><Link to='categories' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Categories </Link></li>
+              <li className="text-gray-300 hover:text-orange-400 text-sm mb-2 block" ><Link to='contact' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Contact </Link></li>
               
               
             </ul>
@@ -56,11 +68,11 @@ const Footer = () => {
        
         <p className='mb-2  text-orange-400'>Follow Us</p>
         <div className='flex'>
-       < AiOutlineFacebook className="h-5 w-5  mr-4 text-white" aria-hidden="true" />
-       < AiOutlineYoutube className="h-5 w-5  text-white  mr-4" aria-hidden="true" />
-       < AiOutlineLinkedin className="h-5 w-5  text-white  mr-4" aria-hidden="true" />
-       < AiOutlineTwitter className="h-5 w-5  text-white  mr-4" aria-hidden="true" />
-       < FaTelegram className="h-5 w-5  text-white  mr-4" aria-hidden="true" />
+       < AiOutlineFacebook className="h-5 w-5 hover:text-orange-400 mr-4 text-white" aria-hidden="true" />
+       < AiOutlineYoutube className="h-5 w-5 hover:text-orange-400 text-white  mr-4" aria-hidden="true" />
+       < AiOutlineLinkedin className="h-5 w-5 hover:text-orange-400 text-white  mr-4" aria-hidden="true" />
+       < AiOutlineTwitter className="h-5 w-5 hover:text-orange-400 text-white  mr-4" aria-hidden="true" />
+       < FaTelegram className="h-5 w-5  text-white hover:text-orange-400 mr-4" aria-hidden="true" />
 
        </div>
         <div className="mt-8 border-t bg-orange-400 border-gray-800 ">

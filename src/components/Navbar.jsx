@@ -40,22 +40,34 @@ const Navbar = () => {
           spy={true}>Contact </Link></button> </li> 
         </ul>
         <div onClick={handleNav} className="block p-6 md:hidden">
-          {!nav ?   <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {nav ?   <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
       </div>
       <div
         className={`${
-          !nav
+          nav
             ? 'fixed left-0 top-0 w-[80%] h-full border-r border-white-700 bg-[#000000] ease-in-out duration-500 z-10 md:hidden'
             : 'fixed left-[-100%] block md:hidden'
         }`}
       >
         <h1 className="w-full text-3xl text-[#ffff] p-4 font-bold m-3">K-guitar.</h1>
         <ul className="uppercase p-4 block md:hidden">
-          <li className="p-4 border-b text-[#ffff] border-gray-600">Home</li>
-          <li className="p-4 border-b text-[#ffff] border-gray-600">About</li>
-          <li className="p-4 border-b text-[#ffff] border-gray-600">Categories</li>
-          <li className="p-4 border-b text-[#ffff] border-gray-600">Help</li>
+          <li className="p-4 border-b text-[#ffff]  hover:text-orange-400 border-gray-600" ><Link to='home' 
+          activeClass='active'
+          smooth={true}
+          spy={true} onClick={handleNav}>Home </Link></li>
+          <li className="p-4 border-b text-[#ffff] hover:text-orange-400 border-gray-600" ><Link to='about' 
+          activeClass='active'
+          smooth={true}
+          spy={true} onClick={handleNav}>About </Link></li>
+          <li className="p-4 border-b text-[#ffff] hover:text-orange-400 border-gray-600"><Link to='categories' 
+          activeClass='active'
+          smooth={true}
+          spy={true} onClick={handleNav}>Categories</Link></li>
+          <li className="p-4 border-b text-[#ffff] hover:text-orange-400 border-gray-600"><Link to='contact' 
+          activeClass='active'
+          smooth={true}
+          spy={true} onClick={handleNav}>Contact </Link></li>
           <li className="p-4">Contact</li>
         </ul>
       </div>
