@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-
+import { Link } from 'react-scroll';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -11,23 +11,33 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-        <h1 className="w-full p-4 px-6 text-3xl font-bold">K-guitar.</h1>
+        <h1 className="w-full p-4 px-6 text-3xl text-orange-400 font-bold">K-guitar.</h1>
         <ul className="hidden md:flex">
         <li className='relative group px-3 py-2'>
-                <button className='hover:opacity-50 h-24 p-4 cursor-default'>
-                 <a href="/"> Home </a></button> </li> 
+                <button className='hover:text-orange-400 h-24 p-4 cursor-default'>
+                 <Link to='home' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Home </Link></button> </li> 
                  <li className='relative group px-3 py-2'>
-                <button className='hover:opacity-50 h-24 p-4 cursor-default'>
-                 <a href="/"> About </a></button> </li> 
+                <button className='hover:text-orange-400 h-24 p-4 cursor-default'>
+                <Link to='about' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>About </Link></button> </li> 
                  <li className='relative group px-3 py-2'>
-                <button className='hover:opacity-50 h-24 p-4 cursor-default'>
-                 <a href="/"> Categories </a></button> </li> 
+                <button className='hover:text-orange-400 h-24 p-4 cursor-default'>
+                <Link to='categories' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Categories </Link></button> </li> 
+                
                  <li className='relative group px-3 py-2'>
-                <button className='hover:opacity-50 h-24 p-4 cursor-default'>
-                 <a href="/"> Help </a></button> </li> 
-                 <li className='relative group px-3 py-2'>
-                <button className='hover:opacity-50 h-24 p-4 cursor-default'>
-                 <a href="/">Contact </a></button> </li> 
+                <button className='hover:text-orange-400 h-24 p-4 cursor-default'>
+                <Link to='contact' 
+          activeClass='active'
+          smooth={true}
+          spy={true}>Contact </Link></button> </li> 
         </ul>
         <div onClick={handleNav} className="block p-6 md:hidden">
           {!nav ?   <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

@@ -15,7 +15,7 @@ const Home = () => {
   };
 
   return (
-    <div className='w-full h-[550px] text-white'>
+    <div className='w-full h-[550px] text-white' id='home'>
       <div className='absolute w-full h-[550px] bg-gradient-to-b from-black'></div>
       <div className='hidden md:flex justify-center items-center'>
         <Slidingimg />
@@ -23,10 +23,12 @@ const Home = () => {
       <img className='w-full h-[550px] md:hidden' src={img1} alt='img1' />
       <div className='absolute w-full top-[15%] p-4 md:p-8'>
         <div className='my-4 text-center flex flex-col justify-center'>
-          <p className='font-bold text-[45px] my-1 md:px-6 px-3'>
-            Discover Your Own<br />
+          <p className='font-bold text-orange-400 text-[45px] my-1 md:px-6 px-3'>
+            Discover Your Own </p>
+            <p className='font-bold text-[45px] my-1 md:px-6 px-3'>
             Equipment Guitar Only With K-guitar.
           </p>
+         
           <p className='px-5 hidden md:block'>
             A guitar store that specializes in selling guitars and related
             musical instruments, accessories, and equipment. These stores
