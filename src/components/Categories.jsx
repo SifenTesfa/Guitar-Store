@@ -23,7 +23,7 @@ function Categories() {
         >  Categories </p>
         <p className='w-full  text-center p-4 justify-center text-white font-bold object-cover'>Visit our guitar store and find the guitar you've been looking for. Come and make your purchase today!</p>
         <div className='relative flex items-center'>
-          <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
+          <MdChevronLeft className='opacity-50  cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
           <div
             id='slider'
             className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
@@ -36,7 +36,7 @@ function Categories() {
               />
             ))}
           </div>
-          <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40} />
+          <MdChevronRight className='opacity-50 cursor-pointer  hover:opacity-100' onClick={slideRight} size={40} />
         </div>
       </div>
     );
