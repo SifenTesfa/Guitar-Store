@@ -15,7 +15,7 @@ const Footer = () => {
         />
         
         
-        <div className=" mx-auto absolute lg:top-[480%] py-8 px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto absolute  py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 lg:w-1/4 mb-8 md:mb-0">
             <h3 className="font-bold text-orange-400 text-[20px] mb-4">About Us</h3>
